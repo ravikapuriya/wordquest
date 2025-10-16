@@ -1,0 +1,18 @@
+{
+    "id": "level6",
+    "name": "Game On",
+    "gridSize": 11,
+    "time": 140,
+    "words": [
+        "CRICKET",
+        "FOOTBALL",
+        "TENNIS",
+        "HOCKEY",
+        "BADMINTON",
+        "RUGBY",
+        "GOLF",
+        "BOXING",
+        "CHESS",
+        "KABADDI"
+    ]
+}

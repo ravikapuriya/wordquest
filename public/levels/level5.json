@@ -1,0 +1,17 @@
+{
+    "id": "level5",
+    "name": "Our Solar System",
+    "gridSize": 11,
+    "time": 130,
+    "words": [
+        "MERCURY",
+        "VENUS",
+        "EARTH",
+        "MARS",
+        "JUPITER",
+        "SATURN",
+        "URANUS",
+        "NEPTUNE",
+        "COMET"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": "level2",
+    "name": "Animal Friends",
+    "gridSize": 9,
+    "time": 100,
+    "words": [
+        "CAT",
+        "DOG",
+        "LION",
+        "BEAR",
+        "HORSE",
+        "MOUSE",
+        "EAGLE"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "level7",
+    "name": "Earth & Sky",
+    "gridSize": 12,
+    "time": 150,
+    "words": [
+        "MOUNTAIN",
+        "RIVER",
+        "OCEAN",
+        "DESERT",
+        "FOREST",
+        "VALLEY",
+        "ISLAND",
+        "GLACIER",
+        "VOLCANO",
+        "CANYON",
+        "MEADOW"
+    ]
+}

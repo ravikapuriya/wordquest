@@ -1,0 +1,20 @@
+{
+    "id": "level9",
+    "name": "On the Move",
+    "gridSize": 12,
+    "time": 170,
+    "words": [
+        "AIRPLANE",
+        "BICYCLE",
+        "SUBWAY",
+        "TRACTOR",
+        "SCOOTER",
+        "ROCKET",
+        "SAILBOAT",
+        "TRAIN",
+        "BUS",
+        "CAR",
+        "HELICOPTER",
+        "FERRY"
+    ]
+}

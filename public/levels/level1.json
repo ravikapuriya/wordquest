@@ -1,0 +1,14 @@
+{
+    "id": "level1",
+    "name": "Color Burst",
+    "gridSize": 8,
+    "time": 90,
+    "words": [
+        "RED",
+        "BLUE",
+        "GREEN",
+        "PINK",
+        "GOLD",
+        "PURPLE"
+    ]
+}
