@@ -1,0 +1,16 @@
+{
+    "id": "level4",
+    "name": "Celebrate!",
+    "gridSize": 10,
+    "time": 120,
+    "words": [
+        "PARTY",
+        "DANCE",
+        "MUSIC",
+        "CAKE",
+        "GIFT",
+        "LIGHTS",
+        "PARADE",
+        "DECOR"
+    ]
+}

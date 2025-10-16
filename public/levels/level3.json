@@ -1,0 +1,16 @@
+{
+    "id": "level3",
+    "name": "Tasty Bites",
+    "gridSize": 10,
+    "time": 120,
+    "words": [
+        "PIZZA",
+        "BREAD",
+        "RICE",
+        "PASTA",
+        "SALAD",
+        "SOUP",
+        "CHEESE",
+        "BURGER"
+    ]
+}

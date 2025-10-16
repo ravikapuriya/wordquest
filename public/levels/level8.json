@@ -1,0 +1,20 @@
+{
+    "id": "level8",
+    "name": "Tech Stack",
+    "gridSize": 12,
+    "time": 160,
+    "words": [
+        "COMPUTER",
+        "INTERNET",
+        "SOFTWARE",
+        "HARDWARE",
+        "ROBOTICS",
+        "ALGORITHM",
+        "DATABASE",
+        "NETWORK",
+        "KERNEL",
+        "MONITOR",
+        "KEYBOARD",
+        "PROCESSOR"
+    ]
+}

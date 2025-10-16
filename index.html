@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Word Quest</title>
+    <meta name="description" content="A word search game where you can find hidden words in a grid.">
+    <meta name="keywords" content="word search, game, hidden words, grid, puzzle">
+    <meta name="author" content="Ravi Kapuriya">
+    <style>
+        html,
+        body,
+        #game-container {
+            margin: 0;
+            padding: 0;
+            background: #0e0f17;
+            overflow: hidden;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        canvas {
+            outline: none;
+            touch-action: none;
+            -ms-touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        @font-face {
+            font-family: 'BungeeRegular';
+            font-weight: normal;
+            font-style: normal;
+            src: url('assets/fonts/Bungee-Regular.ttf');
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <div style="font-family:BungeeRegular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

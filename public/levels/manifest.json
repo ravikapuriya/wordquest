@@ -1,0 +1,74 @@
+{
+    "levels": [
+        {
+            "id": "level1",
+            "name": "Color Burst",
+            "file": "level1.json",
+            "time": 90,
+            "description": "Easy color names to warm up."
+        },
+        {
+            "id": "level2",
+            "name": "Animal Friends",
+            "file": "level2.json",
+            "time": 100,
+            "description": "Common animals; slightly larger grid."
+        },
+        {
+            "id": "level3",
+            "name": "Tasty Bites",
+            "file": "level3.json",
+            "time": 120,
+            "description": "Food theme; 8 words to find."
+        },
+        {
+            "id": "level4",
+            "name": "Celebrate!",
+            "file": "level4.json",
+            "time": 120,
+            "description": "Celebration vibes with party words."
+        },
+        {
+            "id": "level5",
+            "name": "Our Solar System",
+            "file": "level5.json",
+            "time": 130,
+            "description": "Planets (and a comet); longer words begin."
+        },
+        {
+            "id": "level6",
+            "name": "Game On",
+            "file": "level6.json",
+            "time": 140,
+            "description": "Sports mix; 10 varied-length terms."
+        },
+        {
+            "id": "level7",
+            "name": "Earth & Sky",
+            "file": "level7.json",
+            "time": 150,
+            "description": "Nature terrain and features; 11 words."
+        },
+        {
+            "id": "level8",
+            "name": "Tech Stack",
+            "file": "level8.json",
+            "time": 160,
+            "description": "Technology theme; full 12-word set."
+        },
+        {
+            "id": "level9",
+            "name": "On the Move",
+            "file": "level9.json",
+            "time": 170,
+            "description": "Transport modes; longer, trickier words."
+        },
+        {
+            "id": "level10",
+            "name": "Space Explorers",
+            "file": "level10.json",
+            "time": 180,
+            "description": "Advanced space terms; final challenge."
+        }
+    ]
+}

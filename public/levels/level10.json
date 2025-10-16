@@ -1,0 +1,20 @@
+{
+    "id": "level10",
+    "name": "Space Explorers",
+    "gridSize": 12,
+    "time": 180,
+    "words": [
+        "ASTRONAUT",
+        "TELESCOPE",
+        "GALAXY",
+        "NEBULA",
+        "ASTEROID",
+        "METEORITE",
+        "COSMONAUT",
+        "ORBITAL",
+        "LAUNCHPAD",
+        "SATELLITE",
+        "STARSHIP",
+        "SPACECRAFT"
+    ]
+}
