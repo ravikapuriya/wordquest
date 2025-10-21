@@ -1,362 +1,404 @@
 {
-	"textures": [
-		{
-			"image": "game-ui.png",
-			"format": "RGBA8888",
-			"size": {
-				"w": 390,
-				"h": 862
-			},
-			"scale": 1,
-			"frames": [
-				{
-					"filename": "blue-button-normal",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 384,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 384,
-						"h": 128
-					},
-					"frame": {
-						"x": 1,
-						"y": 1,
-						"w": 384,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 96,
-						"y": 32,
-						"w": 192,
-						"h": 64
-					}
-				},
-				{
-					"filename": "blue-button-press",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 384,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 384,
-						"h": 128
-					},
-					"frame": {
-						"x": 1,
-						"y": 131,
-						"w": 384,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 96,
-						"y": 32,
-						"w": 192,
-						"h": 64
-					}
-				},
-				{
-					"filename": "popup-body",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 384,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 384,
-						"h": 128
-					},
-					"frame": {
-						"x": 1,
-						"y": 261,
-						"w": 384,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 96,
-						"y": 32,
-						"w": 192,
-						"h": 64
-					}
-				},
-				{
-					"filename": "popup-header",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 384,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 384,
-						"h": 128
-					},
-					"frame": {
-						"x": 1,
-						"y": 391,
-						"w": 384,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 96,
-						"y": 32,
-						"w": 192,
-						"h": 64
-					}
-				},
-				{
-					"filename": "blue-grid",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 128,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 128,
-						"h": 128
-					},
-					"frame": {
-						"x": 1,
-						"y": 521,
-						"w": 128,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 32,
-						"y": 32,
-						"w": 64,
-						"h": 64
-					}
-				},
-				{
-					"filename": "green-grid",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 128,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 128,
-						"h": 128
-					},
-					"frame": {
-						"x": 131,
-						"y": 521,
-						"w": 128,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 32,
-						"y": 32,
-						"w": 64,
-						"h": 64
-					}
-				},
-				{
-					"filename": "grey-grid",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 128,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 128,
-						"h": 128
-					},
-					"frame": {
-						"x": 261,
-						"y": 521,
-						"w": 128,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 32,
-						"y": 32,
-						"w": 64,
-						"h": 64
-					}
-				},
-				{
-					"filename": "icon-bg-grey",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 128,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 128,
-						"h": 128
-					},
-					"frame": {
-						"x": 1,
-						"y": 651,
-						"w": 128,
-						"h": 128
-					}
-				},
-				{
-					"filename": "level-bg-round",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 128,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 128,
-						"h": 128
-					},
-					"frame": {
-						"x": 131,
-						"y": 651,
-						"w": 128,
-						"h": 128
-					}
-				},
-				{
-					"filename": "level-bg-square",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 128,
-						"h": 128
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 128,
-						"h": 128
-					},
-					"frame": {
-						"x": 261,
-						"y": 651,
-						"w": 128,
-						"h": 128
-					},
-					"scale9Borders": {
-						"x": 32,
-						"y": 32,
-						"w": 64,
-						"h": 64
-					}
-				},
-				{
-					"filename": "icon-replay",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 90,
-						"h": 80
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 90,
-						"h": 80
-					},
-					"frame": {
-						"x": 1,
-						"y": 781,
-						"w": 90,
-						"h": 80
-					}
-				},
-				{
-					"filename": "icon-play",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 68,
-						"h": 76
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 68,
-						"h": 76
-					},
-					"frame": {
-						"x": 93,
-						"y": 781,
-						"w": 68,
-						"h": 76
-					}
-				},
-				{
-					"filename": "icon-bg-grey-small",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 64,
-						"h": 64
-					},
-					"frame": {
-						"x": 163,
-						"y": 781,
-						"w": 64,
-						"h": 64
-					}
-				},
-				{
-					"filename": "icon-cross",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 36,
-						"h": 36
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 36,
-						"h": 36
-					},
-					"frame": {
-						"x": 229,
-						"y": 781,
-						"w": 36,
-						"h": 36
-					}
-				}
-			]
-		}
-	],
-	"meta": {
-		"app": "https://www.codeandweb.com/texturepacker",
-		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:b04c82c1eb3933b35f074410b58202e3:e6916009756561da1463b445031fed61:828aff64481335ab6a6949a777246dea$"
-	}
+    "textures": [
+        {
+            "image": "game-ui.png",
+            "format": "RGBA8888",
+            "size": {
+                "w": 402,
+                "h": 1057
+            },
+            "scale": 1,
+            "frames": [
+                {
+                    "filename": "blue-button-normal",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 384,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 1,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 96,
+                        "y": 32,
+                        "w": 192,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "blue-button-press",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 384,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 131,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 96,
+                        "y": 32,
+                        "w": 192,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "popup-body",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 384,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 261,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 96,
+                        "y": 32,
+                        "w": 192,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "popup-header",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 384,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 391,
+                        "w": 384,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 96,
+                        "y": 32,
+                        "w": 192,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "blue-pause-button",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 132,
+                        "h": 137
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 132,
+                        "h": 137
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 521,
+                        "w": 132,
+                        "h": 137
+                    }
+                },
+                {
+                    "filename": "blue-restart-button",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 132,
+                        "h": 137
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 132,
+                        "h": 137
+                    },
+                    "frame": {
+                        "x": 135,
+                        "y": 521,
+                        "w": 132,
+                        "h": 137
+                    }
+                },
+                {
+                    "filename": "blue-settings-button",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 132,
+                        "h": 137
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 132,
+                        "h": 137
+                    },
+                    "frame": {
+                        "x": 269,
+                        "y": 521,
+                        "w": 132,
+                        "h": 137
+                    }
+                },
+                {
+                    "filename": "blue-home-button",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 132,
+                        "h": 136
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 132,
+                        "h": 136
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 660,
+                        "w": 132,
+                        "h": 136
+                    }
+                },
+                {
+                    "filename": "blue-play-button",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 132,
+                        "h": 136
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 132,
+                        "h": 136
+                    },
+                    "frame": {
+                        "x": 135,
+                        "y": 660,
+                        "w": 132,
+                        "h": 136
+                    }
+                },
+                {
+                    "filename": "red-close-button",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 132,
+                        "h": 136
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 132,
+                        "h": 136
+                    },
+                    "frame": {
+                        "x": 269,
+                        "y": 660,
+                        "w": 132,
+                        "h": 136
+                    }
+                },
+                {
+                    "filename": "blue-grid",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 128,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 798,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 32,
+                        "y": 32,
+                        "w": 64,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "green-grid",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 128,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 131,
+                        "y": 798,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 32,
+                        "y": 32,
+                        "w": 64,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "grey-grid",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 128,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 261,
+                        "y": 798,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 32,
+                        "y": 32,
+                        "w": 64,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "icon-bg-grey",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 128,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 1,
+                        "y": 928,
+                        "w": 128,
+                        "h": 128
+                    }
+                },
+                {
+                    "filename": "level-bg-round",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 128,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 131,
+                        "y": 928,
+                        "w": 128,
+                        "h": 128
+                    }
+                },
+                {
+                    "filename": "level-bg-square",
+                    "rotated": false,
+                    "trimmed": false,
+                    "sourceSize": {
+                        "w": 128,
+                        "h": 128
+                    },
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "frame": {
+                        "x": 261,
+                        "y": 928,
+                        "w": 128,
+                        "h": 128
+                    },
+                    "scale9Borders": {
+                        "x": 32,
+                        "y": 32,
+                        "w": 64,
+                        "h": 64
+                    }
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "https://www.codeandweb.com/texturepacker",
+        "version": "3.0",
+        "smartupdate": "$TexturePacker:SmartUpdate:8e8c101127515f2e9985101c4445d3d0:bef86a6eac76104913660c76693cdd2a:828aff64481335ab6a6949a777246dea$"
+    }
 }

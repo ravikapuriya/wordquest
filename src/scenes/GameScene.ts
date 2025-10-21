@@ -34,16 +34,6 @@ export class GameScene extends Phaser.Scene {
 
         this.ws = new WordSearch(level.gridSize, level.gridSize, level.words);
 
-        // UI
-        const ui = new UIPanel(this, this.scale.width, this.scale.height);
-        this.add.existing(ui);
-        ui.setWordsList(this.ws.placed, this.foundWords);
-        this.timeLeft = level.time ?? DEFAULT_TIMER_SECONDS;
-        ui.setTime(this.timeLeft, this.timeLeft); // Pass maxTime on initialization
-        ui.setScore(0);
-        ui.setLevelName(level.name);
-        ui.setLevelNumber(`Level ${Number(this.levelId.replace('level', ''))}`);
-
         // Grid
         for (let r = 0; r < level.gridSize; r++) {
             this.tiles[r] = [];
@@ -53,12 +43,23 @@ export class GameScene extends Phaser.Scene {
             }
         }
 
+        // UI
+        const ui = new UIPanel(this, this.scale.width, this.scale.height);
+        ui.setDepth(99);
+        this.add.existing(ui);
+        ui.setWordsList(this.ws.placed, this.foundWords);
+        this.timeLeft = level.time ?? DEFAULT_TIMER_SECONDS;
+        ui.setTime(this.timeLeft, this.timeLeft); // Pass maxTime on initialization
+        ui.setScore(0);
+        ui.setLevelName(level.name);
+        ui.setLevelNumber(`Level ${Number(this.levelId.replace('level', ''))}`);
+
         // Trail & particles
         this.pathG = this.add.graphics();
         this.emitter = this.add.particles(0, 0, 'spark', { speed: { min: 10, max: 30 }, lifespan: 300, alpha: { start: 0.9, end: 0 }, scale: { start: 0.9, end: 0 }, quantity: 1, blendMode: 'ADD', emitting: false });
 
         // Timer
-        this.time.addEvent({
+        const timerEvent = this.time.addEvent({
             delay: 1000, loop: true, callback: () => {
                 this.timeLeft--; ui.setTime(this.timeLeft);
                 if (this.timeLeft <= 0) {
@@ -68,6 +69,7 @@ export class GameScene extends Phaser.Scene {
                 }
             }
         });
+        ui.setTimerEvent(timerEvent);
 
         // Input
         this.input.on('pointerdown', (p: Phaser.Input.Pointer) => {

@@ -10,8 +10,17 @@ export const SCENE_KEYS = Object.freeze({
     LOADING: 'Loading',
     MENU: 'Menu',
     LEVEL_SELECT: 'LevelSelect',
+    UI: 'UI',
     GAME: 'Game',
     GAME_OVER: 'GameOver',
+});
+
+export const EVENT_NAMES = Object.freeze({
+    RESUME_LEVEL: 'resume-level',
+    RESTART_LEVEL: 'restart-level',
+    GOTO_HOME: 'goto-home',
+    OPEN_PAUSE_MENU: 'open-pause-menu',
+    CLOSE_PAUSE_MENU: 'close-pause-menu',
 });
 
 export const FONT_FAMILY = 'BungeeRegular';

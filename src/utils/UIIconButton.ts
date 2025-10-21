@@ -12,7 +12,8 @@ export class UIIconButton extends Phaser.GameObjects.Container {
         callback: () => void,
         iconKey?: string,
         iconFrame?: string | number,
-        size: number = 100
+        scaleFactor: number = 1,
+        size: number = 100,
     ) {
         super(scene, x, y);
 
@@ -23,7 +24,7 @@ export class UIIconButton extends Phaser.GameObjects.Container {
             'level-bg-square',
             size, size,
             32, 32, 32, 32
-        ).setInteractive({ useHandCursor: true });
+        ).setInteractive({ useHandCursor: true }).setScale(scaleFactor);
 
         // Add to container
         this.add(this.btn);
@@ -35,23 +36,23 @@ export class UIIconButton extends Phaser.GameObjects.Container {
             } else {
                 this.icon = scene.add.image(0, 0, iconKey);
             }
-            this.icon.setOrigin(0.5);
+            this.icon.setOrigin(0.5).setScale(scaleFactor);
             this.add(this.icon);
         }
 
         // Button interactions
         this.btn.on('pointerover', () => {
-            scene.tweens.add({ targets: this, scale: 1.1, duration: 100 });
+            scene.tweens.add({ targets: this, scale: scaleFactor * 1.1, duration: 100 });
         });
 
         this.btn.on('pointerout', () => {
-            scene.tweens.add({ targets: this, scale: 1, duration: 100 });
+            scene.tweens.add({ targets: this, scale: scaleFactor, duration: 100 });
         });
 
         this.btn.on('pointerdown', () => {
             scene.tweens.add({
                 targets: this,
-                scale: 0.9,
+                scale: scaleFactor * 0.9,
                 duration: 50,
                 yoyo: true,
                 onComplete: callback

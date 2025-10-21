@@ -1,6 +1,8 @@
 import Phaser from 'phaser';
-import { FONT_FAMILY } from '../config';
+import { ASSET_KEYS, FONT_FAMILY, SCENE_KEYS } from '../config';
 import { UIText } from '@utils/UIText';
+import { UIIconButton } from '@utils/UIIconButton';
+import { PauseMenuPopup } from '../components/PauseMenuPopup';
 
 export class UIPanel extends Phaser.GameObjects.Container {
     scoreText: UIText;
@@ -18,6 +20,9 @@ export class UIPanel extends Phaser.GameObjects.Container {
     currentTime: number = 180;
     timerBarWidth: number = 500;
     timerBarHeight: number = 25;
+    pauseButton: UIIconButton;
+    pauseMenuPopup: PauseMenuPopup;
+    timerEvent?: Phaser.Time.TimerEvent;
 
     constructor(scene: Phaser.Scene, width: number, height: number) {
         super(scene, 0, 0);
@@ -53,7 +58,35 @@ export class UIPanel extends Phaser.GameObjects.Container {
 
         this.wordsContainer = scene.add.container(this.gameWidth / 2, this.gameHeight - 200);
 
-        this.add([this.scoreText, this.levelNameText, this.levelNumberText, this.timerContainer, this.wordsContainer]);
+        // Create pause menu popup
+        this.pauseMenuPopup = new PauseMenuPopup(scene);
+
+        // Pause button
+        this.pauseButton = new UIIconButton(scene, this.gameWidth - 100, 100, () => {
+            console.log('Show pause menu');
+            this.pauseTimer();
+
+            void this.pauseMenuPopup.show({
+                onResume: () => {
+                    console.log('Resume callback');
+                    this.resumeTimer();
+                },
+                onRestart: () => {
+                    console.log('Restart callback');
+                    this.scene.scene.restart();
+                },
+                onHome: () => {
+                    console.log('Home callback');
+                    this.scene.scene.start(SCENE_KEYS.MENU);
+                }
+            });
+        }, ASSET_KEYS.GAME_UI, 'blue-pause-button', 0.8);
+
+        // Add all UI elements
+        this.add([this.scoreText, this.levelNameText, this.levelNumberText, this.timerContainer, this.wordsContainer, this.pauseButton]);
+
+        // Ensure UI container is above game elements
+        this.setDepth(100);
     }
 
     setScore(n: number) { this.scoreText.setText(`Score: ${n}`); }
@@ -86,6 +119,22 @@ export class UIPanel extends Phaser.GameObjects.Container {
         this.timerBarFill.clear();
         this.timerBarFill.fillStyle(color, 1);
         this.timerBarFill.fillRoundedRect(-this.timerBarWidth / 2, -this.timerBarHeight / 2, fillWidth, this.timerBarHeight, 10);
+    }
+
+    setTimerEvent(event: Phaser.Time.TimerEvent) {
+        this.timerEvent = event;
+    }
+
+    pauseTimer() {
+        if (this.timerEvent) {
+            this.timerEvent.paused = true;
+        }
+    }
+
+    resumeTimer() {
+        if (this.timerEvent) {
+            this.timerEvent.paused = false;
+        }
     }
 
     setWordsList(words: string[], foundWords: Set<string>) {
@@ -171,4 +220,5 @@ export class UIPanel extends Phaser.GameObjects.Container {
         const totalHeight = lines.length * lineHeight;
         this.wordsContainer.setPosition(this.gameWidth / 2, this.gameHeight - 200 - totalHeight / 2);
     }
+
 }

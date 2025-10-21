@@ -23,16 +23,16 @@ export class MenuScene extends Phaser.Scene {
         }
 
         // Start Game button
-        const startBtnY = height / 2 + 100;
+        const startBtnY = height / 2 + 200;
         new UIPrimaryButton(this, width / 2, startBtnY, 'START GAME', () => {
             this.scene.start(SCENE_KEYS.LEVEL_SELECT);
         });
 
-        // Options button (placeholder for now)
-        const optionsBtnY = startBtnY + 140;
-        new UIPrimaryButton(this, width / 2, optionsBtnY, 'OPTIONS', () => {
-            // TODO: Open settings popup
-            console.log('Options clicked - Settings popup coming soon!');
-        });
+        // Daily challenge button
+        // const optionsBtnY = startBtnY + 140;
+        // new UIPrimaryButton(this, width / 2, optionsBtnY, 'DAILY CHALLENGE', () => {
+        //     // TODO: Create daily challenge
+        //     console.log('Daily challenge clicked');
+        // });
     }
 }
